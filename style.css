@@ -1,0 +1,191 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --primary: #2563eb;
+  --secondary: #1e293b;
+  --background: #f8fafc;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --white: #ffffff;
+}
+
+body{
+  font-family: "Inter", sans-serif;
+}
+
+header{
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  background-color: var(--background);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+header a{
+  
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+header nav ul{
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  color: var(--text-main);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+header nav ul a{
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+header nav ul a:hover{
+  color: var(--primary);
+}
+
+header nav button{
+  background: var(--primary);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: 0px;
+  cursor: pointer;
+}
+
+header nav button:hover{
+  background-color: var(--secondary);
+}
+
+main{
+  margin: 0 20px;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .hero-content{
+  width: 60%;
+}
+
+main .hero-content h1{
+  margin-bottom: 40px;
+  margin-top: -20px;
+  font-size: 48px;
+  color: var(--text-main);
+}
+
+main .hero-content p{
+  line-height: 1.6;
+  size: 16px;
+  margin-bottom: 20px;
+  color: var(--text-muted);
+  max-width: 500px;
+}
+
+main .hero-content button{
+  background: var(--primary);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: 0px;
+  cursor: pointer;
+}
+
+main .hero-content button:hover{
+  background: var(--secondary);
+}
+
+main .hero-image{
+  width: 100%;
+  max-width: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 431px) {
+  
+  main{
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .hero-content{
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  header nav ul {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: none;
+  }
+
+  header nav button {
+    display: none; /* زرار Get Started */
+  }
+
+  header nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    color: #0f172a;
+    display: block;
+    font-size: 26px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+}
