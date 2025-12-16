@@ -127,7 +127,7 @@ main .hero-content button:hover{
   background: var(--secondary);
 }
 
-main .hero-image{
+main .hero-image img{
   width: 100%;
   max-width: 500px;
 }
@@ -181,6 +181,73 @@ main .hero-image{
   margin-top: 10px;
 }
 
+.about{
+  margin: 10px 30px;
+}
+
+.about h3{
+  margin: 20px 0;
+  text-align: center;
+  font-size: 48px;
+  color: var(--text-main);
+}
+
+.about > p{
+  margin-bottom: 20px;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.about .about-our{
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about .about-our img{
+  width: 50%;
+}
+
+.about .about-our .about-content{
+  width: 45%;
+}
+
+.about .about-our .about-content h4{
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.about .about-our .about-content p{
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about .about-our .about-content ul{
+  list-style: none;
+  margin: 10px 0;
+}
+
+.about .about-our .about-content ul li{
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+.about .about-our .about-content button{
+  margin-top: 10px;
+  background: var(--secondary);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  border: 0px;
+  cursor: pointer;
+}
+
+.about .about-our .about-content button:hover{
+  background: var(--primary);
+}
+
 
 @media (max-width: 431px) {
   
@@ -190,6 +257,18 @@ main .hero-image{
   }
   main .hero-content{
     width: 90%;
+  }
+
+  .about .about-our{
+    flex-direction: column;
+  }
+
+  .about .about-our img{
+    width: 90%;
+  }
+  .about .about-our .about-content{
+    width: 90%;
+    margin-top: 10px;
   }
 }
 
