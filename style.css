@@ -14,6 +14,22 @@
   --white: #ffffff;
 }
 
+.section {
+  margin: 10px 30px;
+}
+
+.section-title {
+  font-size: 48px;
+  text-align: center;
+  color: var(--text-main);
+}
+
+.section-desc {
+  text-align: center;
+  color: var(--text-muted);
+  margin: 20px 0 40px;
+}
+
 body{
   font-family: "Inter", sans-serif;
 }
@@ -89,7 +105,7 @@ header nav button:hover{
 
 main{
   margin: 0 30px;
-  height: 90vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -132,23 +148,6 @@ main .hero-image img{
   max-width: 500px;
 }
 
-.services{
-  margin: 0 30px;
-}
-
-.services h3{
-  text-align: center;
-  font-size: 48px;
-  color: var(--text-main);
-}
-
-.services p{
-  margin-top: 30px;
-  margin-bottom: 20px;
-  text-align: center;
-  color: var(--text-muted);
-}
-
 .services .cards{
   display: flex;
   align-items: center;
@@ -181,21 +180,8 @@ main .hero-image img{
   margin-top: 10px;
 }
 
-.about{
-  margin: 10px 30px;
-}
-
 .about h3{
   margin: 20px 0;
-  text-align: center;
-  font-size: 48px;
-  color: var(--text-main);
-}
-
-.about > p{
-  margin-bottom: 20px;
-  text-align: center;
-  color: var(--text-muted);
 }
 
 .about .about-our{
@@ -246,22 +232,6 @@ main .hero-image img{
 
 .about .about-our .about-content button:hover{
   background: var(--primary);
-}
-
-.choose-us{
-  margin: 10px 30px;
-}
-
-.choose-us > h3{
-  text-align: center;
-  font-size: 48px;
-  margin-top: 20px;
-}
-
-.choose-us > p {
-  text-align: center;
-  margin-top: 20px;
-  color: var(--text-muted);
 }
 
 .choose-us .features{
