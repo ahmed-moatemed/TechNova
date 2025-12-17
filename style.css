@@ -218,6 +218,13 @@ main .hero-image img{
 .about .about-our .about-content ul li{
   margin: 5px 0;
   font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.about .about-our .about-content ul li img{
+  max-width: 30px;
 }
 
 .about .about-our .about-content button{
@@ -416,7 +423,7 @@ main .hero-image img{
   color: var(--primary);
 }
 
-.contant{
+.contact{
   margin: 20px 20px;
   display: flex;
   align-items: center;
@@ -424,34 +431,34 @@ main .hero-image img{
   gap: 20px;
 }
 
-.contant .contant-info{
+.contact .contact-info{
   background: var(--background);
   padding: 20px;
   border-radius: 20px;
 }
 
-.contant-info h4{
+.contact-info h4{
   margin: 10px 0;
   font-size: 20px;
 }
 
-.contant-info p{
+.contact-info p{
   color: var(--text-muted);
   margin-bottom: 10px;
   padding: 10px;
   padding-left: 0;
 }
 
-.contant-info ul{
+.contact-info ul{
   list-style: none;
   color: var(--secondary);
 }
 
-.contant-info ul li{
+.contact-info ul li{
   margin: 4px 0;
 }
 
-.contant .contact-form{
+.contact .contact-form{
   display: flex;
   align-items: center;
   justify-content: left;
@@ -557,6 +564,18 @@ footer .footer-reserved{
   color: var(--text-muted);
 }
 
+.card,
+.pricing-card,
+.feature {
+  transition: all 0.3s ease;
+}
+
+.card:hover,
+.pricing-card:hover,
+.feature:hover {
+  transform: translateY(-6px);
+}
+
 
 @media (max-width: 768px) {
 
@@ -595,6 +614,10 @@ footer .footer-reserved{
   .testimonials .persons{
     grid-template-columns: auto auto;
   }
+
+  .pricing-cards {
+    justify-content: center;
+  }
 }
 
 
@@ -632,11 +655,11 @@ footer .footer-reserved{
     grid-template-columns: auto;
   }
 
-  .contant{
+  .contact{
     flex-direction: column;
   }
 
-  .contant .contact-form{
+  .contact .contact-form{
     width: 100%;
   }
 }
