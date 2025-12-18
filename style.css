@@ -152,7 +152,7 @@ main .hero-image img{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
+  
   gap: 20px;
 }
 
@@ -326,7 +326,6 @@ main .hero-image img{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   gap: 20px;
 }
 
@@ -611,12 +610,19 @@ footer .footer-reserved{
     z-index: 1000;
   }
 
+  .services .cards{
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .testimonials .persons{
     grid-template-columns: auto auto;
   }
 
   .pricing-cards {
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
